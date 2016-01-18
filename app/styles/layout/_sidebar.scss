@@ -1,0 +1,13 @@
+.sidebar {
+	color: $orange-color;
+	font-size: 17px;
+	font-style: italic;
+	padding-right: 40px;
+	border-right: 1px solid #eaeaea;
+	@include breakpoint (medium down) {
+		border-right: none;
+		border-bottom: 1px solid #eaeaea;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+}

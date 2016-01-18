@@ -1,0 +1,24 @@
+.blockquote {
+	position: relative;
+	margin-top: 0;
+	&__content {
+		margin-top: 0;
+		&::before {
+			content: '\201C';
+			font-size: 1.3em;
+			font-weight: bold;
+			position: absolute;
+			top: 10px;
+			left: -15px;
+			line-height: 0;
+		}
+		&::after {
+			content: '\201D';
+			font-size: 1.3em;
+			font-weight: bold;
+			margin-left: 8px;
+			line-height: 0;
+		}
+	}
+
+}

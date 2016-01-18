@@ -1,0 +1,27 @@
+body {
+	background: #e56c69;
+	font-size: 13px;
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+	background: white;
+	position: relative;
+	padding: 80px 0;
+	z-index: 1;
+
+	&:before {
+		background: inherit;
+		content: '';
+		display: block;
+		height: 50%;
+		left: 0;
+		position: absolute;
+		right: 0;
+		z-index: -1;
+		-webkit-backface-visibility: hidden;
+		top: 0;
+		transform: skewY(1.5deg);
+		transform-origin: 100% 0;
+	}
+}

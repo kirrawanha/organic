@@ -1,0 +1,39 @@
+.carousel {
+	&__arrows {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		float: right;
+		color: white;
+		margin-top: 30px;
+		@include breakpoint (medium down) {
+			float: left;
+			margin-left: 40px;
+		}
+	}
+	&__arrow {
+		float: left;
+	}
+	&__button {
+		outline: 0;
+		width: 30px;
+		height: 30px;
+		background: $orange-color;
+		text-align: center;
+		line-height: 30px;
+		padding: 0;
+		margin: 0;
+		vertical-align: middle;
+
+		&:hover { background: lighten($orange-color, 10%); }
+
+		&--prev { border-right: 1px solid rgba(0, 0, 0, 0.08); }
+
+		&.slick-disabled {
+			opacity: 0.4;
+			cursor: not-allowed;
+
+			&:hover { background: $orange-color; }
+		}
+	}
+}

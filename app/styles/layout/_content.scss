@@ -1,0 +1,19 @@
+.content {
+	font-weight: 400;
+	padding-left: 25px;
+	@include breakpoint (small down) {
+		padding: 15px;
+	}
+	&-heading {
+		color: $orange-color;
+		font-size: 23px;
+		font-weight: 400;
+		margin-top: 0;
+	}
+	&-text {
+		color: #737c85;
+		font-family: Arial, sans-serif;
+		font-size: 13px;
+		line-height: 2;
+	}
+}
